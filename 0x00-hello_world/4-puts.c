@@ -1,11 +1,8 @@
 #include <stdio.h>
-	/**
-	 * main - Enrty point
-	 *
-	 * Description: Printing using puts
-	 *@parameter: coding
-	 * Return: Always 0 (success)
-	 */
+/**
+* main - A programme outputing lines using the puts function
+* Return: 0 (Success)
+*/
 int main(void)
 {
 	puts("\"Programming is like building a multilingual puzzle");
