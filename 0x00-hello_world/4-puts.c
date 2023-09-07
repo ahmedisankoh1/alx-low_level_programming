@@ -1,7 +1,9 @@
-#include<stdio.h>
+#include <stdio.h>
 	/**
 	 * main - Enrty point
 	 *
+	 * Description: Printing using puts
+	 *@parameter: coding
 	 * Return: Always 0 (success)
 	 */
 int main(void)
