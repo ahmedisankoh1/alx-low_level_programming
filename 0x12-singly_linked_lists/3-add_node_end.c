@@ -3,7 +3,6 @@
  * add_node_end - adds a new node at the end of a linked list
  * @head: double pointer to the list_t list
  * @str: string to put in the new node
- * @tmp: my tracking pointer
  *
  * Return: Return NULL if it failed
  */
@@ -34,6 +33,6 @@ list_t *add_node_end(list_t **head, const char *str)
 		tmp = tmp->next;
 
 	tmp->next = new;
-	
+
 	return (NULL);
 }
