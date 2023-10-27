@@ -6,8 +6,7 @@
  */
 void print_binary(unsigned long int n)
 {
-	unsigned long int check;
-	int move;
+	int i;
 
 	if (n == 0)
 	{
@@ -15,12 +14,9 @@ void print_binary(unsigned long int n)
 		return;
 	}
 
-	for (check = n, move = 0; (check >>= 1) > 0; move++)
-		;
-
-	for (; move >= 0; move--)
+	for (i = 16; i >= 0; i--)
 	{
-		if ((n >> move) & 1)
+		if (n & (1 << i))
 			printf("1");
 		else
 			printf("0");
