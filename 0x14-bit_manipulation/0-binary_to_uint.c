@@ -8,24 +8,22 @@
 
 unsigned int binary_to_uint(const char *b)
 {
-	unsigned int pwr;
-	unsigned int total;
+	unsigned int n = 0;
+	int power = 1;
 	int i;
+	int result = 0;
 
-	if (b == NULL)
-		return (0);
 
-	for (i = 0; b[i]; i++)
+	while (b[n] != '\0')
+		n++;
+	for (i = n - 1; i >= 0; i--)
 	{
 		if (b[i] != '0' && b[i] != '1')
 			return (0);
-	}
 
-	for (pwr = 1, total = 0, i--; i >= 0; i--, pwr *= 2)
-	{
 		if (b[i] == '1')
-			total += i;
+			result = result + power;
+		power = power * 2;
 	}
-
-	return (total);
+	return (result);
 }
